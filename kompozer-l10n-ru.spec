@@ -1,7 +1,3 @@
-%define _enable_debug_packages %{nil}
-%define debug_package          %{nil}
-%define distsuffix edm
-
 %define version 0.8
 %define pre b3
 %if %pre
@@ -59,7 +55,5 @@ rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
-%dir %{_libdir}/kompozer
+%dir /usr/lib/kompozer
 %{_mozillaextpath}
-
-
