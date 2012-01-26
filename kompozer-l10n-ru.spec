@@ -3,10 +3,10 @@
 %if %pre
 %define release %mkrel -c %pre 6
 %else
-%define release %mkrel 2
+%define release 3
 %endif
 
-%define _mozillaextpath /usr/lib/kompozer/extensions
+%define _mozillaextpath %{_libdir}/kompozer/extensions
 
 Summary: Russian langpack for Kompozer
 Summary(ru): Русская локализация идля Kompozer
@@ -55,5 +55,4 @@ rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
-%dir /usr/lib/kompozer
 %{_mozillaextpath}
