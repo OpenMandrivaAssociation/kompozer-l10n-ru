@@ -56,3 +56,17 @@ rm -rf %{buildroot}
 %files
 %defattr(0644,root,root,0755)
 %{_mozillaextpath}
+
+
+%changelog
+* Thu Jan 26 2012 Александр Казанцев <kazancas@mandriva.org> 0.8-0.b3.7mdv2012.0
++ Revision: 769007
+- install extentions with %%libdir path
+
+* Sat Jul 23 2011 Александр Казанцев <kazancas@mandriva.org> 0.8-0.b3.6
++ Revision: 691335
+- imported package kompozer-l10n-ru
+
+
+* Mon Sep 6 2010 Alexander Kazancev <kazancas@mandriva.ru>
++ initial release
